@@ -1,7 +1,12 @@
 // app/signup.tsx
-import { View, Text, TextInput, TouchableOpacity, Image } from "react-native";
-import { FontAwesome, Feather, MaterialIcons, Ionicons } from "@expo/vector-icons";
+import {
+  Feather,
+  FontAwesome,
+  Ionicons,
+  MaterialIcons,
+} from "@expo/vector-icons";
 import { Link } from "expo-router";
+import { Image, Text, TextInput, TouchableOpacity, View } from "react-native";
 
 export default function Signup() {
   return (
@@ -10,13 +15,22 @@ export default function Signup() {
 
       <View className="flex-row justify-center gap-8 mb-4">
         <TouchableOpacity className="bg-white w-[60px] h-[57px] p-3 rounded-md">
-          <Image source={require("../../assets/images/google.png")} className="w-[34px] h-[34px] place-self" />
+          <Image
+            source={require("../../assets/images/google.png")}
+            className="w-[34px] h-[34px] place-self"
+          />
         </TouchableOpacity>
         <TouchableOpacity className="bg-white  w-[60px] h-[57px] p-3 rounded-md ">
-          <Image source={require("../../assets/images/facebook.png")} className="w-[34px] h-[34px]" />
+          <Image
+            source={require("../../assets/images/facebook.png")}
+            className="w-[34px] h-[34px]"
+          />
         </TouchableOpacity>
         <TouchableOpacity className="bg-white  w-[60px] h-[57px] p-3 rounded-md ">
-          <Image source={require("../../assets/images/apple.png")} className="w-[34px] h-[34px]" />
+          <Image
+            source={require("../../assets/images/apple.png")}
+            className="w-[34px] h-[34px]"
+          />
         </TouchableOpacity>
       </View>
 
@@ -31,19 +45,33 @@ export default function Signup() {
       <View className="gap-6 mb-4">
         <View className="flex-row items-center bg-white rounded-full px-4 py-3 border-[0.5px]">
           <FontAwesome name="user" size={20} color="gray" className="mr-2" />
-          <TextInput placeholder="Enter your name" className="flex-1 ml-2 text-gray-700" />
+          <TextInput
+            placeholder="Enter your name"
+            className="flex-1 ml-2 text-gray-700"
+          />
         </View>
         <View className="flex-row items-center bg-white rounded-full px-4 py-3 shadow">
           <MaterialIcons name="email" size={20} color="gray" />
-          <TextInput placeholder="Enter your email" className="flex-1 ml-2 text-gray-700" />
+          <TextInput
+            placeholder="Enter your email"
+            className="flex-1 ml-2 text-gray-700"
+          />
         </View>
         <View className="flex-row items-center bg-white rounded-full px-4 py-3 shadow">
           <Feather name="phone" size={20} color="gray" />
-          <TextInput placeholder="Phone Number" className="flex-1 ml-2 text-gray-700" keyboardType="phone-pad" />
+          <TextInput
+            placeholder="Phone Number"
+            className="flex-1 ml-2 text-gray-700"
+            keyboardType="phone-pad"
+          />
         </View>
         <View className="flex-row items-center bg-white rounded-full px-4 py-3 shadow">
           <Ionicons name="lock-closed-outline" size={20} color="gray" />
-          <TextInput placeholder="Enter your password" secureTextEntry className="flex-1 ml-2 text-gray-700" />
+          <TextInput
+            placeholder="Enter your password"
+            secureTextEntry
+            className="flex-1 ml-2 text-gray-700"
+          />
           <Feather name="eye-off" size={20} color="gray" />
         </View>
       </View>
